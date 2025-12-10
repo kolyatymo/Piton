@@ -13,10 +13,20 @@
 # print(p)
 
 #task 3
-# number = int(input('number1 : '))
-# number1 = int(input('number2 : '))
-# number2 = int(input('number3 : '))
+#number = int(input('number1 : '))
+#number1 = int(input('number2 : '))
+#number2 = int(input('number3 : '))
+#sum = number * 10 + number1
+#sum1 = sum * 10 + number2
 # print('{}{}{}'.format(number, number1, number2))
+#print(sum1)
+
+# task 3 №2
+# number = int(input('sum : '))
+# num1 = number // 100 % 10
+# num2 = number // 10 % 10
+# num3 = number % 10
+# print(num1, num2, num3)
 
 #task 4
 # sume = int(input('sume : '))
