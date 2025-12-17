@@ -74,9 +74,10 @@
 # rating1 = int(input('rating_1 : '))
 # rating2 = int(input('rating_2 : '))
 # rating3 = int(input('rating_3 : '))
-# if rating1 <= 3 or rating2 <=3 or rating3 <=3:
+# rating4 = int(input('rating_3 : '))
+# if rating1 <= 2 or rating2 <= 2 or rating3 <=2 or rating4 <2:
 #     print("Недопуск")
-# elif rating1 >=4 or rating2 >=4 or rating3 >=4:
+# elif rating1 >= 4 and rating2 >= 4 and rating3 >= 4 and rating4 >=4:
 #     print("Допуск")
 # else:
 #     print("Допускається")
