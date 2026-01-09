@@ -1,24 +1,24 @@
 # task 1 !!!!
 # num1 = int(input('num1 : '))
 # num2 = int(input('num2 : '))
-# parni=0
-# neparni=0
-# kratni9=0
+# couples=0
+# odd=0
+# sume_num_9=0
 # for i in range(num1 +1, num2 +1):
 #     if i % 2 == 0:
 #         parni+=i
-#         print('parni : ',parni, end='\t')
+#         print('couples : ',couples, end='\t')
 
 #         print('\n')        
 #     if i % 2 != 0:
 #         neparni+=i
-#         print('neparni : ',neparni, end='\t')
+#         print('odd : ',odd, end='\t')
 
 #     if i % 9 == 0:
 #         kratni9+=i
-#         print('kratni 9 : ',kratni9, end='\t')
+#         print('sum 9 : ',sume_num_9, end='\t')
 
-# print('SEREDNE',parni + neparni + kratni9 / 3)
+# print('SEREDNE',couples + odd + sume_num_9 / 3)
 
 # task 2
 # dowshuna = int(input('dowshuna : '))
