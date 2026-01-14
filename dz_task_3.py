@@ -29,13 +29,13 @@
 # print(num1, num2, num3)
 
 #task 4
-# sume = int(input('sume : '))
-# sum1 = sume // 1000
-# sum2 = (sume // 100) - sum1 * 10
-# sum3 = (sume - sum1 * 1000 - sum2 * 100)//10
-# sum4 = sume - sum1 * 1000 - sum2 * 100 - sum3 * 10
-# sum5 = sum1 * sum2 * sum3 * sum4
-# print(sum1, sum2, sum3, sum4, sum5, sep='\n')
+sume = int(input('sume : '))
+sum1 = sume // 1000
+sum2 = (sume // 100) - sum1 * 10
+sum3 = (sume - sum1 * 1000 - sum2 * 100)//10
+sum4 = sume - sum1 * 1000 - sum2 * 100 - sum3 * 10
+sum5 = sum1 * sum2 * sum3 * sum4
+print(sum1, sum2, sum3, sum4, sum5, sep='\n')
 
 #task 5 
 # sume = int(input('sume : '))
