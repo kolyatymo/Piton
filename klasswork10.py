@@ -1,9 +1,9 @@
 
 # word = 'purple'
 
-# # print(len(word))
-# # print(word[len(word)-1])
-# # print(word[0])
+# print(len(word))
+# print(word[len(word)-1])
+# print(word[0])
 
 
 # work1 = "R"
