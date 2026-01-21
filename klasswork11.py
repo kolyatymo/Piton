@@ -1,8 +1,8 @@
-# import re
+import re
 
 # str_1 = '123'
 # str_2 = '234'
-# str_3 = 'lorem** 21 red ipsum red set hac'
+str_3 = 'lorem** 21 red ipsum red set hac'
 
 # print('\n\n=================== re.search(template, str)=============')
 # print(f'\t {str_1} \t\t\t --> {re.search('12', str_1)}')
