@@ -1,9 +1,9 @@
 # task 1
 
-# number = int(input('number : '))
-# for i in range(1, 10):
-#     multiplication = number * i
-#     print(number, '*', i, '=', multiplication)
+number = int(input('number : '))
+for i in range(1, 10):
+    multiplication = number * i
+    print(number, '*', i, '=', multiplication)
 
 
 # task 2
