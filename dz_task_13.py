@@ -10,7 +10,6 @@
 #         count+=1
 # print(count)
 
-    
 
 # task 2
 
@@ -27,21 +26,21 @@
 
 # task 3
 
+
 # import random
 
-# user = [random.randint(1,20) for i in range(10)]
-# print(user)
-# best_line = []
-# start = [user[0]]
-# for i in range(1, len(user)):
-#     if user[i] > user[i-1]:
-#         best_line.append(user[i])
+# number = [random.randint(1,10) for i in range(10)]
+# print(number,'\n')
+# result = []
+# start = [number[0]]
+# for i in range(1, len(number)):
+#     if number[i] > number[i - 1]:
+#         start.append(number[i])
 #     else:
-#         best_line = [user[i]]
-#     if len(start) > len(best_line):
-#         best_line = start
-# print(len(best_line))
-# print(best_line)
+#         if len(start) > len(result):
+#             result = start
+#         start = [number[i]]
+# print(result,'\n \n',len(result))
 
 
 # task 4
@@ -95,20 +94,19 @@
 
 # task 6
 
-import random
+# import random
 
-user = [random.randint(1,20) for i in range(5)]
-print(user)
-result = []
-min_ = user[0]
-max_ = user[0]
-for i in user:
-    if min_ > i:
-        min_ = i
-    if max_ < i:
-        max_ = i
-
-    result.append(min_)
-
-
-            
+# user = [random.randint(1,20) for i in range(4)]
+# print(user)
+# result = []
+# user.sort()
+# min_ = 0
+# max_ = len(user)-1
+# for i in range(len(user)):
+#     if i % 2 == 0:
+#         result.append(user[min_])
+#         min_+=1
+#     else:
+#         result.append(user[max_])
+#         max_-=1
+# print(result)
