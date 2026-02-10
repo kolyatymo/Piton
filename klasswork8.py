@@ -55,37 +55,37 @@ for i in range(1, 10):
 
 # task 5
 
-from datetime import datetime
-import random
+# from datetime import datetime
+# import random
 
-randomm = random.randint(1, 500)
+# randomm = random.randint(1, 500)
 
-start = input('''
-#         ----Гра вгадай число (від 1 до 500)----
-              [0] --> stop
-# ''')
+# start = input('''
+# #         ----Гра вгадай число (від 1 до 500)----
+#               [0] --> stop
+# # ''')
 
-print(datetime.now().hour)
-print(datetime.now().minute)
-print(datetime.now().second)
-s = datetime.now()
+# print(datetime.now().hour)
+# print(datetime.now().minute)
+# print(datetime.now().second)
+# s = datetime.now()
 
-while True:
-    for i in range(1, 501):
-       number = int(input('number -->'))
-    if number == 0:
-        break
-    if number < randomm:
-     print('число менше')
-    elif number > randomm:
-     print('число більше')
-    elif number == randomm:
-       print('ти вгадав число')
-       break
+# while True:
+#     for i in range(1, 501):
+#        number = int(input('number -->'))
+#     if number == 0:
+#         break
+#     if number < randomm:
+#      print('число менше')
+#     elif number > randomm:
+#      print('число більше')
+#     elif number == randomm:
+#        print('ти вгадав число')
+#        break
        
-print(datetime.now().hour)
-print(datetime.now().minute)
-print(datetime.now().second)
+# print(datetime.now().hour)
+# print(datetime.now().minute)
+# print(datetime.now().second)
 
 
 # task 6

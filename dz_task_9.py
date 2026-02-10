@@ -150,22 +150,22 @@
 
 #     # img з
 #     if pokaz == 'z':
-        # line = 10
-        # star = 0
-        # space = line
-        # flag = True
-        # for i in range(1, line):
-        #     if flag:
-        #         space -=1
-        #         star +=1
-        #     else:
-        #         space +=1
-        #         star -=1
-        #     if star == line // 2:
-        #         flag = False
-        #     print(' ' * space, end='')
-        #     print('*' * star, end='')
-        #     print()
+#         line = 10
+#         star = 0
+#         space = line
+#         flag = True
+#         for i in range(1, line):
+#             if flag:
+#                 space -=1
+#                 star +=1
+#             else:
+#                 space +=1
+#                 star -=1
+#             if star == line // 2:
+#                 flag = False
+#             print(' ' * space, end='')
+#             print('*' * star, end='')
+#             print()
 #         print('--------- малюнок З ---------',)
 
 

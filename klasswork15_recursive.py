@@ -10,7 +10,7 @@
 
 # def factor(number):
 #     if number == 1 or number == 0:
-#         return 1
+#         return number
 #     return number * factor(number - 1)
 
 # print(factor(5))
@@ -40,6 +40,13 @@
 #     if number < 10:
 #         return number
 #     return number % 10 + sume_(number // 10)
+# print(sume_(9657))
+
+# def max_(num):
+#     if num < 10:
+#         return num
+#     return num % 10 if num % 10 > max_(num // 10) else max_(num // 10)  
+# print(max_(9867))
 
 
 # def sume_(number, sum = 0):
