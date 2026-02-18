@@ -1,0 +1,74 @@
+[
+    {
+        "type": "книга",
+        "title": "Деееннь",
+        "author": "Я",
+        "category": "класика",
+        "year": 2007,
+        "available": true
+    },
+    {
+        "type": "журнал",
+        "title": "Forbes Україна",
+        "author": null,
+        "category": null,
+        "year": 2024,
+        "available": true
+    },
+    {
+        "type": "газета",
+        "title": "Голос України",
+        "author": null,
+        "category": null,
+        "year": 2025,
+        "available": true
+    },
+    {
+        "type": "журнал",
+        "title": "National Geographic",
+        "author": null,
+        "category": null,
+        "year": 2023,
+        "available": true
+    },
+    {
+        "type": "книга",
+        "title": "Гаррі Поттер і філософський камінь",
+        "author": "Роулінг",
+        "category": "фантастика",
+        "year": 1997,
+        "available": true
+    },
+    {
+        "type": "книга",
+        "title": "День",
+        "author": "null",
+        "category": "null",
+        "year": 2022,
+        "available": true
+    },
+    {
+        "type": "книга",
+        "title": "Тіні забутих предків",
+        "author": "Коцюбинський",
+        "category": "класика",
+        "year": 1911,
+        "available": true
+    },
+    {
+        "type": "книга",
+        "title": "Війна і мир",
+        "author": "Толстой",
+        "category": "класика",
+        "year": 1869,
+        "available": false
+    },
+    {
+        "type": "журнал",
+        "title": "Vogue Україна",
+        "author": null,
+        "category": null,
+        "year": 2024,
+        "available": true
+    }
+]
