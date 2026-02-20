@@ -6,9 +6,12 @@ FILE_ = f'{directory}/{library}'
 
 
 def loadFile():
-    with open(FILE_, encoding='utf-8') as file:
-        file_ = json.load(file)
-        return file_
+    try:
+        with open(FILE_, encoding='utf-8') as file:
+            return json.load(file)
+    except FileNotFoundError as ex:
+        print('file not found',ex)
+        return[]
 
 
 file_ = loadFile()
@@ -30,14 +33,19 @@ def review():
         print(i)
 
 def add():
-    type_ = input('книга - журнал - газета --> ').lower()
+    type_ = input('книга - журнал - газета --> ').strip().lower()
+    if type_ not in ('книга', 'журнал','газета'):
+        print('invalid type')
+        return
+
+
     title = input('name --> ')
     author = None
     category = None
     year = None
 
-    if type_ == 'book':
-        author = input('autor --> ')
+    if type_ == 'книга':
+        author = input('author --> ')
         category = input('category --> ')
         year = int(input('year --> '))
     else:
@@ -62,9 +70,11 @@ def addition():
 
 
 def remove():
-    title = input('name for delete --> ')
+    type_ = input('книга - журнал - газета --> ').strip().lower()
+    title = input('name for delete --> ').strip()
+    year = int(input('year for delete --> '))
     for index, i in enumerate(file_):
-        if i['title'] == title:
+        if i['title'] == title and i['year'] == year and i['type'] == type_:
             del file_[index]
             save()
             print('delete')
@@ -80,7 +90,7 @@ def arrange():
 
 
 def search():
-    author = input('autor --> ')
+    author = input('author --> ')
     title = input('name --> ')
 
     for i in file_:
@@ -106,7 +116,7 @@ def searchM():
     print('not found')
 
 def findA():
-    autor = input('autor --> ')
+    autor = input('author --> ')
     for i in file_:
         if i['type'] == 'книга' and i['author'] == autor:
             print(i)
@@ -134,13 +144,14 @@ def countbook():
     print(f'{count_} категорії {category}')
 
 def removeM():
+    global file_
     year = int(input('year for delete --> '))
     file_ = [i for i in file_ if not (i['type'] == 'газета' and i['year'] == year)]
     save()
     print('delete')
 
 def debtors():
-    autor = input('autor --> ')
+    autor = input('author --> ')
     found = False
     for i in file_:
         if i['type'] == 'книга' and i['author'] == autor and i['available'] == False:
@@ -159,12 +170,13 @@ while True:
 4 - sort
 5 - found book
 6 - found magazine
-7 - found book for autor
+7 - found book for author
 8 - found book for category
 9 - found magazine for title and year
 10 - books count by category
 11 - delete newspapers by year
 12 - deptor of books
+13 - Add multiple records
 0 - exit
 ''')
 
@@ -194,6 +206,8 @@ while True:
             removeM()
         elif choice == '12':
             debtors()
+        elif choice == '13':
+            addition()
         elif choice == '0':
             break
         else:
